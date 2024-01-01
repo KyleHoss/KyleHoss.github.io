@@ -28,6 +28,7 @@ body {
 .NavBar .Web-Links a{
   margin-left: 25px ;
   margin-right: 25px;
+  text-decoration: none;
 }
 .Social-Links {
   width: 20%;

@@ -5,6 +5,22 @@ body {
   overflow-x: hidden;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.Accent-Color {
+  color: rgb(235, 182, 69);
+}
+.Web-Front{
+  background-color: rgb(53, 53, 66);
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.NameLabel{
+  position: relative;
+  left: 10%;
+  top:10%;
+}
+
 /* ---------------------------------------------------------- */
 /* NavBar */
 .NavBar{
@@ -151,7 +167,7 @@ body {
 }
 
 .Home-Skills .Panel{
-  width: 32%;
+  width: 31.5%;
   height: 50%;
   text-align: center;
   padding-top: 2%;
@@ -197,13 +213,6 @@ body {
   text-align: start;
 }
 
-
-
-
-
-
-
-
 .Home-Skills .Panel .Project{
   margin: 2%;
   display: flex;
@@ -215,6 +224,11 @@ body {
   border-color: white;
 }
 
+.Home-Skills .Panel a{
+  text-decoration: none;
+  color: white;
+}
+
 .Home-Skills .Panel .Project a:hover{
   transition-duration: 200ms;
 }
@@ -223,202 +237,16 @@ body {
   width: 25%;
   aspect-ratio: 14 / 9;
   border-radius: 5%;
+  padding-right: 5%;
 }
 
 .Home-Skills .Panel .Project div{
   text-align: start;
+  padding-right: 5%;
 }
 
 /* ------------------------------------------------------- */
+/* Data Science Portfolio */
 
 
 
-.contact-Button {
-  background-color: gold;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-
-.Web-Front{
-  background-color: rgb(53, 53, 66);
-  width: 100%;
-  height: 800px;
-  position: relative;
-}
-
-
-
-
-.NameLabel{
-  position: relative;
-  left: 10%;
-  top:10%;
-}
-
-
-
-
-
-.Accent-Color {
-  color: rgb(235, 182, 69);
-}
-
-.modal-BackgroundColor {
-  background-color: rgb(53, 53, 66);
-  opacity: 0.95;
-}
-.btn-primary {
-  background-color: rgb(235, 182, 69);
-  border: rgb(235, 182, 69);
-}
-
-.DarkHome {
-  background-color: rgb(39, 40, 50);
-}
-
-/* Success Check Mark */
-#success_tic .page-body {
-  max-width: 300px;
-  background-color: rgb(53, 53, 66);
-  opacity: 0.95;
-  margin: 10% auto;
-}
-#success_tic .page-body .head {
-  text-align: center;
-}
-#success_tic .close {
-  opacity: 1;
-  position: absolute;
-  right: 0px;
-  font-size: 30px;
-  padding: 3px 15px;
-  margin-bottom: 10px;
-}
-#success_tic .checkmark-circle {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-.checkmark-circle .background {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #1ab394;
-  position: absolute;
-}
-#success_tic .checkmark-circle .checkmark {
-  border-radius: 5px;
-}
-#success_tic .checkmark-circle .checkmark.draw:after {
-  -webkit-animation-delay: 300ms;
-  -moz-animation-delay: 300ms;
-  animation-delay: 300ms;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-name: checkmark;
-  -moz-animation-name: checkmark;
-  animation-name: checkmark;
-  -webkit-transform: scaleX(-1) rotate(135deg);
-  -moz-transform: scaleX(-1) rotate(135deg);
-  -ms-transform: scaleX(-1) rotate(135deg);
-  -o-transform: scaleX(-1) rotate(135deg);
-  transform: scaleX(-1) rotate(135deg);
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-#success_tic .checkmark-circle .checkmark:after {
-  opacity: 1;
-  height: 75px;
-  width: 37.5px;
-  -webkit-transform-origin: left top;
-  -moz-transform-origin: left top;
-  -ms-transform-origin: left top;
-  -o-transform-origin: left top;
-  transform-origin: left top;
-  border-right: 15px solid #fff;
-  border-top: 15px solid #fff;
-  border-radius: 2.5px !important;
-  content: "";
-  left: 35px;
-  top: 80px;
-  position: absolute;
-}
-@-webkit-keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}
-@-moz-keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}
-@keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}

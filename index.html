@@ -1,205 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html>
 
-<head>
-    <!-- Required meta tags -->
-    <!-- <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
 
-    <!--Import Style sheet-->
+    <!--Import Custom Stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--Title of Website Page-->
-    <title>Kyle Hostetter's Porfolio</title>
-</head>
+    <!-- Add Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<body>
-    <!-- NavBar -->
-    <div class="NavBar">
-        <!-- Web Logo -->
-        <div class="Logo">
-            <a href="/home">
-                <img src="/Images/KylesHeadshot.jpg" alt="Kyles Logo" />
-            </a>
-        </div>
+    <!-- Typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        <!-- WebLinks -->
-        <div class="Web-Links">
-            <!-- Home -->
-            <a href="/home" class="Accent-Color" style="--nav-order: 9">Home</a>
-            <!-- About -->
-            <a href="/about" class="Accent-Color" style="--nav-order: 8">About</a>
-            <!-- Data Science -->
-            <a href="/DataScience/HeartClass.html" class="Accent-Color" style="--nav-order: 7">Data Science</a>
-            <!-- Contact -->
-            <a href="/contact" class="Accent-Color" style="--nav-order: 6">Contact</a>
-            <!-- Download Resume -->
-            <a href="/KyleHostetterResume.pdf" class="Accent-Color" style="--nav-order: 5">Resume</a>
-        </div>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <!-- Logo -->
+            <a href="" class="logo">Kyle's <span>Portfolio</span></a>
 
-        <!-- Social Links -->
-        <div class="Social-Links">
-            <!-- Facebook  -->
-            <a href="https://www.facebook.com/kyle.hostetter.775" style="--nav-order: 4">
-                <img src="/Images/Social-Icons/Facebook.png" />
-            </a>
-            <!-- GitHub -->
-            <a href="https://github.com/KyleHoss/Data-Science-Portfolio" style="--nav-order: 3">
-                <img src="/Images/Social-Icons/GitHub.png" />
-            </a>
-            <!-- Linkedin -->
-            <a href="https://www.linkedin.com/in/kyle-hostetter-906182157/6" style="--nav-order: 2">
-                <img src="/Images/Social-Icons/Linkedin.png" />
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/KHOST16" style="--nav-order: 1">
-                <img src="/Images/Social-Icons/Twitter.png" />
-            </a>
-        </div>
-    </div>
-    <!-- End of NavBar -->
+            <!-- NavBar -->
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </nav>
+        </header>
 
-    <!-- Add Main Content -->
-    <h2 class="NameLabel Web-Front">
-        Kyle Hostetter
-    </h2>
-
-    <!-- Past Companies -->
-    <div class="Past-Companies">
-        <img src="/Images/WorkPlaces/CedarHurst.png" style=" --bounce-order: 1;">
-        <img src="/Images/WorkPlaces/MensWarehouse.jpeg" style=" --bounce-order: 2;">
-        <img src="/Images/WorkPlaces/Geek_Squad.png" style=" --bounce-order: 3;">
-        <img src="/Images/WorkPlaces/Disney.jpg" style=" --bounce-order: 4;">
-        <img src="/Images/WorkPlaces/Trident-Technologies.jpeg" style=" --bounce-order: 5;">
-        <img src="/Images/WorkPlaces/UnComn.jpeg" style=" --bounce-order: 6;">
-        <img src="/Images/WorkPlaces/Charter.webp" style=" --bounce-order: 7;">
-        <img src="/Images/WorkPlaces/S2-Analytics.png" style=" --bounce-order: 8;">
-        <img src="/Images/WorkPlaces/Metric-5.jpeg" style=" --bounce-order: 9;">
-    </div>
-
-    <div class="Home-Skills">
-        <div class="Panel" style=" --riseUp-order: 1;">
-            <h2>How I can help you!</h2>
-            <p>With having 8+ years of experience in Data Science and Financial engineering, I can provide a different
-                insight
-                to complex problems. Having the tradecraft in any any experience is what seperates the theoritcal from
-                the
-                actual.
-            </p>
-            <!-- Fun Facts -->
-            <div class="Highlights">
-                <div>
-                    <h3 class="Accent-Color">7+</h3>
-                    <p>Data Science & <br>Financial Engineering</p>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Kyle J. Hostetter</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>With having 8+ years of experience in Data Science and Financial engineering, 
+                    I can provide a different insight to complex problems. Having the tradecraft 
+                    in any any experience is what seperates the theoritcal from the actual.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/kyle.hostetter.775">
+                        <i class='bx bxl-meta'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kyle-hostetter-906182157/6">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                    <a href="https://github.com/KyleHoss">
+                        <i class='bx bxl-github' ></i>
+                    </a>
                 </div>
-                <div>
-                    <h3 class="Accent-Color">50+</h3>
-                    <p>Trading Algorithms <br>Created</p>
-                </div>
+                <a href="/KyleHostetterResume.pdf" class="btn">Download Resume</a>
             </div>
-            <div class="Highlights">
-                <div>
-                    <h3 class="Accent-Color">Top 1%</h3>
-                    <p>Of hackers on TryHackme.com</>
-                </div>
-                <div>
-                    <h3 class="Accent-Color">27+</h3>
-                    <p>IT specialized certificates</p>
-                </div>
+            <!-- Profile Picture -->
+            <div class="home-image">
+                <img src="/Cold_Coat.jpg" alt="Me in teh Cold">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bxs-bank'></i>
+                <h3>Financial Alogorithms</h3>
+                <p> Creating trading algorithms in <span>C++</span>, <span>Python</span>, <span>MQL5</span>, <span>PineScript</span>. Using trading strategis I have built showed profits over <span>1,100%</span>!</p>
+                <a href="#" class="btn">Algorithms</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-laptop' ></i>
+                <h3>Penetration Testing</h3>
+                <p>Currently in the Top <span>1%</span> of Hackers on <span>TryHackMe.com</span>. And awaiting to take the <span>OSCP</span> to further my skills in penetration testing.</p>
+                <a href="https://tryhackme.com/p/KyleHoss" class="btn">See Profile</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-test-tube' ></i>
+                <h3>Data Science</h3>
+                <p>I have been engineering <span>Machine Learning</span> & <span>Deep Learning</span> algorithms to solve real-world problems. With most of my interest in the medical field.</p>
+                <a href="https://tryhackme.com/p/KyleHoss" class="btn">See Data</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-network-chart' ></i>
+                <h3>Network Optimization</h3>
+                <p>I currently design and configure networks for small business like <span> Gili Heating & Cooling</span>. Including instalation, engineering, and administraion.</p>
+                <a href="https://giliheatingandcooling.com" class="btn">Visit Site</a>
             </div>
         </div>
+        </section>
+        
+        <!-- Project Section -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Lastest <span>Projects</span></h2>
 
-        <div class="Panel" style=" --riseUp-order: 2;">
-            <h2>Experience</h2>
-            <div class="Experience">
-                <h4>Title: Caregiver</h4>
-                <ul>
-                    <li>Employed knowledge of the human body to make appropriate medical decisions for patients.</li>
-                    <li>Handled high-stress situations and human lives to ensure healthy patients.</li>
-                    <li>Implemented quick thinking and strong decision-making to ensure the safety and care of the
-                        patients.</li>
-                    <li>Maintained accurate records of patient care, condition, progress, and concerns.</li>
-                    <li>Cooked appetizing and satisfying meals and snacks.</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Projects -->
-        <div class="Panel" style=" --riseUp-order: 3;">
-            <h2>New Projects!</h2>
-            <a href="/DataScience/HeartClass.html">
-                <div class="Project">
-                    <img src="/Images/Projects/HeartFailure.jpg" alt="Heart-Failure-Picture">
-                    <div>
-                        <h4>Heart Failure Prediction</h4>
-                        <p>This was tested on over 300 people to see who would have heart failure.</p>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="/Projects/HeartFailure.jpg" alt="Heart Failure">
+                    <div class="portfolio-layer">
+                        <h4>Heart Failure Classification</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque asperiores, labore veniam cupiditate consequatur non officia rem, minus in, fugiat provident alias sapiente. Sapiente, maxime quasi. Aperiam sed voluptatem eum?</p>
+                        <a href="/DataScience/HeartClass.html"><i class='bx bx-link-external'></i></a>
                     </div>
-                    <svg width="40" height="40" fill="currentColor" class="Accent-Color" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 
-                           1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                    </svg>
                 </div>
-            </a>
-            <a href="/DataScience/UsedCarCapstone.html">
-                <div class="Project">
-                    <img src="/Images/Projects/UsedCars.jpeg" alt="Used Car Picture">
-                    <div>
-                        <h4>Used Car Price Prediction</h4>
-                        <p>This was tested on over 300 people to see who would have heart failure.</p>
+                <div class="portfolio-box">
+                    <img src="/Projects/UsedCars.jpeg" alt="Used Cars">
+                    <div class="portfolio-layer">
+                        <h4>Used Car Price Regression</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque asperiores, labore veniam cupiditate consequatur non officia rem, minus in, fugiat provident alias sapiente. Sapiente, maxime quasi. Aperiam sed voluptatem eum?</p>
+                        <a href="/DataScience/UsedCarCapstone.html"><i class='bx bx-link-external'></i></a>
                     </div>
-                    <svg width="40" height="40" fill="currentColor" class="Accent-Color" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 
-                        1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                    </svg>
                 </div>
-            </a>
-            <a href="/DataScience/Pn"></a>
-            <div class="Project">
-                <img src="/Images/Projects/Pneumonia.jpeg" alt="Used Car Picture">
-                <div>
-                    <h4>Pneumonia Classification</h4>
-                    <p>This was tested on over 300 people to see who would have heart failure.</p>
+                <div class="portfolio-box">
+                    <img src="/Projects/Pneumonia.jpeg" alt="Pneumonia">
+                    <div class="portfolio-layer">
+                        <h4>Lungs with Pneumonia Classification</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque asperiores, labore veniam cupiditate consequatur non officia rem, minus in, fugiat provident alias sapiente. Sapiente, maxime quasi. Aperiam sed voluptatem eum?</p>
+                        <a href="/DataScience/PnuemoniaClassifier.html"><i class='bx bx-link-external'></i></a>
+                    </div>
                 </div>
-                <svg width="40" height="40" fill="currentColor" class="Accent-Color" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 
-                       1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                </svg>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- End Main Content -->
-    <!-- Footer -->
-    <div class="Footer">
-        <div class="Logo">
-            <!-- Web Logo -->
-            <a href="/home">
-                <img src="/Images/KylesHeadshot.jpg" alt="Kyles Logo" />
-            </a>
-        </div>
-        <div class="My-Message">
-            <p>Webiste Built by: <b>Kyle Hostetter</b></p>
-        </div>
-        <div class="Social-Links">
-            <!-- Facebook  -->
-            <a href="https://www.facebook.com/kyle.hostetter.775" style="--nav-order: 4">
-                <img src="/Images/Social-Icons/Facebook.png" />
-            </a>
-            <!-- GitHub -->
-            <a href="https://github.com/KyleHoss/Data-Science-Portfolio" style="--nav-order: 3">
-                <img src="/Images/Social-Icons/GitHub.png" />
-            </a>
-            <!-- Linkedin -->
-            <a href="https://www.linkedin.com/in/kyle-hostetter-906182157/6" style="--nav-order: 2">
-                <img src="/Images/Social-Icons/Linkedin.png" />
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/KHOST16" style="--nav-order: 1">
-                <img src="/Images/Social-Icons/Twitter.png" />
-            </a>
-        </div>
-    </div>
-</body>
-<!-- End of Body -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Built by Kyle J. Hostetter | Youtube Tutorials Helped!</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
 
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+        <!-- Add Scroll Reveal -->
+        
+    </body>
 </html>
-<!-- End of HTML -->
+
+
+

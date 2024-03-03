@@ -32,7 +32,7 @@ ScrollReveal().reveal('.home-content h1', { origin: 'left'});
 ScrollReveal().reveal('.home-content p', { origin: 'right'});
 
 // Typing Animation
-const typed = new Typed('.multiple-text', {
+var typed = new Typed('.multiple-text', {
     strings: ['Computational Scientist', 'Data Scientist', 'Financial Software Engineer','Penetration Tester', 'Systems Engineer'],
     typeSpeed: 100, 
     backSpeed: 100, 

@@ -55,7 +55,7 @@ body {
 
 /* Visualization Sections */
 .stl-port {
-    background: var(--bg-color);
+    background: var(--bg-color);    
 }
 .stl-port h2 {
     margin-bottom: 4rem;
@@ -66,7 +66,7 @@ body {
     align-items: center;
     gap: 1.75rem;
 }
-.stl-port-container .stl-port-box {
+.stl-port-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -75,6 +75,32 @@ body {
     max-height: 21rem;
     aspect-ratio: 1400/900;
 }
+
+.stl-overview-port-container {
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.75rem;
+}
+.stl-overview-port-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    max-height: 25rem;
+    aspect-ratio: 1400/900;
+}
+.stl-overview-port-box img {
+    width: 100%;
+    transition: .5s ease;
+    scale: 1.5;
+}
+.stl-overview-port-box:hover img {
+    transform: scale(1.1);
+}
+
+
 .stl-port-box img {
     width: 100%;
     transition: .5s ease;
@@ -83,8 +109,7 @@ body {
 .stl-port-box:hover img {
     transform: scale(1.1);
 }
-
-.stl-port-box .stl-port-layer {
+.stl-port-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -108,19 +133,16 @@ body {
 
 /* Saint Louis Charts */
 .stl-charts {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    overflow: hidden;
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 .stl-charts iframe{
-    position: absolute;
-    width: 87%;
-    height: 100%;
-    justify-content: center;
-    overflow: hidden;
+    width: 131rem;
+    height: 80rem;
+    resize: both;
+    overflow: auto;
 }
 
